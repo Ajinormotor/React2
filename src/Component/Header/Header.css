@@ -1,0 +1,99 @@
+
+.first__navbar{
+   
+   justify-content: space-between;
+    align-items: center;
+    background: red;
+   color: white;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+.contact{
+    left: 0;
+}
+
+.contact  ul li{
+    display: inline-block;
+    row-gap: 1rem;
+    padding: 10px;
+}
+.socials{
+    padding: 1px;
+    
+}
+.socials ul li{
+    display: inline-block;
+}
+
+.socials ul li i{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.second__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+    margin: 7px;
+}
+
+.logo{
+    gap: 2rem;
+}
+
+.logo p{
+    color: red;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.navigate{
+    color: black;
+}
+
+.menu{
+    text-decoration: none;
+    color: black;
+}
+
+.nav__items{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+ 
+}
+
+.r__btn {
+    background: red;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    width: 140px;
+    color: white;
+    outline: none;
+    border: none;
+    
+}
+
+@media (max-width: 700px){
+
+    .first__navbar{
+        padding: 0;
+        
+    }
+  .socials{
+    opacity: 0;
+  }
+  .contact{
+    display: flex;
+    flex-direction: row;
+    left: -10px;
+  }
+
+}
