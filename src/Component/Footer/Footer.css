@@ -1,29 +1,28 @@
 
 .footers{
-    margin: 0;
-    padding: 0;
    justify-content: space-between;
     align-items: center;
     color: white;
-    display: flex; 
-    flex-direction: column;
     background: black;
-    color: white;
     text-align: center;
+   
+    
 }
 
 
 .footer__row{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; 
     padding: 20px;
-
+    text-align: left;
 }
 
 
 .footers__col{
+    padding: 30px;
     text-align: left;
 }
+
 .footer-logo p{
     padding: 10px;
 }
@@ -34,21 +33,29 @@
 
 /*------Media Query------*/
 
-@media (max-width: 700px){
+@media (max-width: 500px){
+    footer{
+        width: 105%;
+    }
     .footers{
         display: flex;
         flex-direction: column;
+        overflow: auto;
+        width: 105;
+    
     }
     .footer__row{
-        display: grid;
-       grid-template-columns: 250px 100px 150px;
+        display: flex;
+        flex-direction: column;
        text-align: left;
+       margin: 30px;
 
     }
     .footer__col{
         text-align: left;
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
     .footer__col h1{
         font-size: 25px;

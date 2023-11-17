@@ -1,14 +1,16 @@
 
 .first__navbar{
-   
    justify-content: space-between;
     align-items: center;
     background: red;
    color: white;
    display: flex;
+   flex-direction: row;
    margin: 0;
    padding: 0;
    font-family: 'Poppins', sans-serif;
+   z-index: 1000;
+   
 }
 .contact{
     left: 0;
@@ -85,7 +87,7 @@
 
     .first__navbar{
         padding: 0;
-        
+       
     }
   .socials{
     opacity: 0;
@@ -95,5 +97,7 @@
     flex-direction: row;
     left: -10px;
   }
-
+  .contact  ul li{
+    display: inline-block;
+  }
 }

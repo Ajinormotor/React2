@@ -5,13 +5,14 @@ import '../Footer/Footer.css'
 
 const Footer = () => {
   return (
+    <footer>
    <section className="footers">
     <Container>
-
-        <div className="footer__row">
         <Row>
 
-   <Col>
+        <div className="footer__row">
+
+   <Col >
 
    <div className="footer-logo">
    <img src={ crossheirlogo }   alt="" />
@@ -58,10 +59,10 @@ const Footer = () => {
             </div>
             </Col>
 
-
-
+            <Col></Col>
+            </div>
         </Row>
-        </div>
+       
 
 
   <hr  />
@@ -71,6 +72,7 @@ Developed by Automa8</p>
 
     </Container>
    </section>
+   </footer>
   )
 }
 

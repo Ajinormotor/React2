@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Overview/Overview.css"
-import { Col, Row } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 
 import team from "../../Images/team.jpg"
 
@@ -11,15 +11,22 @@ const Overview = () => {
     data-aos-delay="200"
     data-aos-duration="600"
     >
-  
-        <Row>
-            <Col  lg='6'  sm='9'  md='7'>
+  <Container>
+  <div className="overview__row">
+            <Row>
+            
+            <Col>
+            <div className="overview__col">
+          
             <div className="overview__img"  >
             <img src ={team}
   alt=""  />        
   </div>
+  </div>
       </Col>
+
             <Col>
+            <div className="overview__col">
             <div className="overview__text" data-aos="fade-down">
             <h1>Overview</h1>
 
@@ -33,10 +40,14 @@ const Overview = () => {
          <button className="overview__btn">
             Learn More <i class="ri-arrow-right-fill"></i>
          </button>
-
+</div>
          </div>
             </Col>
+          
         </Row>
+
+        </div>
+        </Container>
   
     
     </section>

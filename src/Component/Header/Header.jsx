@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Header/Header.css";
 import crossheirlogo from "../../Images/crossheirlogo.jpg";
+import { Container } from 'reactstrap';
 
 const navLink = [
   { 
@@ -20,6 +21,7 @@ display: 'Services'
 const Header = () => {
   return (
     <section className="header">
+      <Container>
    
       <nav>
 
@@ -76,6 +78,7 @@ const Header = () => {
 
       </nav>
   
+      </Container>
     </section>
   )
 }
