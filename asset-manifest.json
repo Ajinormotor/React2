@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React2/static/css/main.4f67b7b1.css",
-    "main.js": "/React2/static/js/main.3d78c35b.js",
+    "main.css": "/React2/static/css/main.44095c7a.css",
+    "main.js": "/React2/static/js/main.81d4c8d7.js",
     "static/media/remixicon.svg?t=1690730386070": "/React2/static/media/remixicon.db77551b8efc76571c4f.svg",
     "static/media/remixicon.eot?t=1690730386070": "/React2/static/media/remixicon.53ec05edb4b6864b45b1.eot",
     "static/media/remixicon.ttf?t=1690730386070": "/React2/static/media/remixicon.4aa0fd158658e2a40e79.ttf",
@@ -14,11 +14,11 @@
     "static/media/estate.webp": "/React2/static/media/estate.fd2419e2e0ccce53c9c0.webp",
     "static/media/overviewImg.webp": "/React2/static/media/overviewImg.dd8bb85457a907cb7b47.webp",
     "index.html": "/React2/index.html",
-    "main.4f67b7b1.css.map": "/React2/static/css/main.4f67b7b1.css.map",
-    "main.3d78c35b.js.map": "/React2/static/js/main.3d78c35b.js.map"
+    "main.44095c7a.css.map": "/React2/static/css/main.44095c7a.css.map",
+    "main.81d4c8d7.js.map": "/React2/static/js/main.81d4c8d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f67b7b1.css",
-    "static/js/main.3d78c35b.js"
+    "static/css/main.44095c7a.css",
+    "static/js/main.81d4c8d7.js"
   ]
 }
