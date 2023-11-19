@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRef,useEffect } from 'react';
 import "../Header/Header.css";
 import crossheirlogo from "../../Images/crossheirlogo.jpg";
 import { Container } from 'reactstrap';
@@ -19,8 +20,50 @@ display: 'Services'
 ]
 
 const Header = () => {
+
+
+  const headerRef = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleScroll = () => {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      headerRef.current.classList.add('header__shrink');
+    } else {
+      headerRef.current.classList.remove('header__shrink');
+    }
+  };
+
+  const menuToggle = () => {
+    menuRef.current.classList.toggle('menu_active');
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleClick = e => {
+    e.preventDefault();
+
+    const targetAttr = e.target.getAttribute('href');
+    const location = document.querySelector(targetAttr).offsetTop;
+
+    window.scroll({
+      left: 0,
+      top: location - 70,
+      behavior: 'smooth'
+    });
+  };
+
+
   return (
-    <section className="header">
+    <section className="header"  ref={headerRef}>
       <Container>
    
       <nav>
@@ -58,11 +101,11 @@ const Header = () => {
           <p><img src={ crossheirlogo}  alt="logo"  />CROSSHEIRS</p>
         </div>
 
-<div className="navigate">
-  <ul className="menu">
+<div className="nav__menu"  ref={menuRef} onClick={menuToggle}>
+  <ul className="nav__list">
     {
       navLink.map( item => (
-        <li className="nav__items"><a href= {item.path}>{item.display}</a></li>
+        <li className="nav__items"><a href= {item.path} onClick={handleClick}>{item.display}</a></li>
       ))
     }
   </ul>
@@ -70,6 +113,7 @@ const Header = () => {
     {/*======SIDE NAVBAR====*/}
     <div className="right__navbar">
       <button  className="r__btn">Contact Us</button>
+      <span className="mobile__menu"><i class="ri-menu-5-line" onClick={menuToggle}></i></span>
     </div>
 
 

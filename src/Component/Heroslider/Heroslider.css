@@ -1,0 +1,39 @@
+.hero__slider{
+    overflow: hidden;
+}
+
+.slider__item{
+    width: 100%;
+    text-align: left;
+    height: 640px;
+}
+
+.slider__item-01{
+    background: linear-gradient(rgba(0,13,107,0.5),rgba(0,13,107,0)), url('../../Images/download.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slider__item-02{
+    background: linear-gradient(rgba(0,13,107,0.5),rgba(0,13,107,0)), url('../../Images/depositphotos_593299738-stock-photo-young-man-working-laptop-computer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider__content{
+    padding-top: 100px;
+    width: 50%;
+}
+
+.slider__content h4{
+    font-size: 20px;
+    
+
+}
+
+.slider__content p{
+    font-size: 35px;
+}
